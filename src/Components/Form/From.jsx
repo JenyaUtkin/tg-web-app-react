@@ -13,7 +13,7 @@ const From = () => {
     tg.MainButton.setParams({
         text: 'Отправить'
     })
-   },[])
+   },[tg.MainButton])
 
     useEffect(() => {
         if(!name || !date) {
@@ -22,7 +22,7 @@ const From = () => {
             tg.MainButton.show()
         }
 
-    }, [name, date])
+    }, [name, date, tg.MainButton])
 
    const onChangeName = (e) => {
         setName(e.target.value)
