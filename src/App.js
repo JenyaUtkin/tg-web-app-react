@@ -7,15 +7,12 @@ function App() {
 
     useEffect(()=> {
         tg.ready();
-    }, [])
+    }, []);
 
-    const onClose = () => {
-        tg.close();
-    }
+
   return (
     <div className="App">
         hello world
-        <button onClick={onClose}>Закрыть</button>
     </div>
   );
 }
